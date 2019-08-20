@@ -1,0 +1,70 @@
+﻿@model IEnumerable<RegistroPontoViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+        <h1 class="page-title txt-color-blueDark">
+
+            <i class="fa-fw fa fa-pencil-square-o"></i>
+            Gerencimento
+            <span>
+                >
+                Pontos
+            </span>
+        </h1>
+    </div>
+</div>
+
+<section id="widget-grid">
+    <div class="row">
+        <article class="col-sm-12 col-md-12 col-lg-12">
+
+            <div class="jarviswidget" id="wid-id-1" data-widget-editbutton="false" data-widget-custombutton="false">
+                <header>
+                    <span class="widget-icon"> <i class="fa fa-list-ul"></i> </span>
+                    <h2>Listagem de Computadores </h2>
+                </header>
+
+                <div class="col-lg-12">
+                    <div class="widget-body no-padding">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.NomeUsuario)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.HorarioRegistro)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.AlteracaoSessao)
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.NomeUsuario)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.HorarioRegistro)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.AlteracaoSessao)
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>

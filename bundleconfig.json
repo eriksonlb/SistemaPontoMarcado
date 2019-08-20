@@ -1,0 +1,170 @@
+[
+  {
+    "outputFileName": "wwwroot/lib/smart-admin/dist/css/bootstrap.min.css",
+    "inputFiles": [
+      "wwwroot/lib/smart-admin/dist/css/bootstrap.css"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/smart-admin/dist/css/font-awesom.min.css",
+    "inputFiles": [
+      "wwwroot/lib/smart-admin/dist/css/font-awesom.css"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/smart-admin/dist/css/smartadmin-skins.min.css",
+    "inputFiles": [
+      "wwwroot/lib/smart-admin/dist/css/smartadmin-skins.css"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/smart-admin/dist/css/smartadmin-production-plugins.min.css",
+    "inputFiles": [
+      "wwwroot/lib/smart-admin/dist/css/smartadmin-production-plugins.css"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/smart-admin/dist/css/demo.min.css",
+    "inputFiles": [
+      "wwwroot/lib/smart-admin/dist/css/demo.css"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/smart-admin/dist/css/font-awesome.min.css",
+    "inputFiles": [
+      "wwwroot/lib/smart-admin/dist/css/font-awesome.css"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/smart-admin/dist/css/invoice.min.css",
+    "inputFiles": [
+      "wwwroot/lib/smart-admin/dist/css/invoice.css"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/smart-admin/dist/css/smartadmin-production.min.css",
+    "inputFiles": [
+      "wwwroot/lib/smart-admin/dist/css/smartadmin-production.css"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/smart-admin/dist/css/smartadmin-rtl.min.css",
+    "inputFiles": [
+      "wwwroot/lib/smart-admin/dist/css/smartadmin-rtl.css"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/css/site.min.css",
+    "inputFiles": [
+      "wwwroot/css/site.css"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/js/site.min.js",
+    "inputFiles": [
+      "wwwroot/js/site.js"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/jquery/dist/jquery.min.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery/dist/jquery.js"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery-validation/dist/additional-methods.js"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  },
+  {
+    "outputFileName": "wwwroot/lib/smart-admin/dist/js/app.config.min.js",
+    "inputFiles": [
+      "wwwroot/lib/smart-admin/dist/js/app.config.js"
+    ],
+    "sourceMap": false,
+    "sourceMapRootPath": null
+  }
+]

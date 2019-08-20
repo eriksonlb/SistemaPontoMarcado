@@ -1,0 +1,8 @@
+#logo - background
+
+logo1 - #373435 
+logo2 - #201A1A
+logo3 - #28B87A
+logo4 - #E8715B
+logo5 - #201E1E
+logo6 - #4A154B

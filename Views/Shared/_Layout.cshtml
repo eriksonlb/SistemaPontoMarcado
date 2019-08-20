@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PontoMarcado.WebApp</title>
+
+    <link rel="stylesheet" href="~/lib/smart-admin/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/smart-admin/dist/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/lib/smart-admin/dist/css/smartadmin-production-plugins.min.css" />
+    <link rel="stylesheet" href="~/lib/smart-admin/dist/css/smartadmin-production.min.css" />
+    <link rel="stylesheet" href="~/lib/smart-admin/dist/css/smartadmin-skins.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+    <!-- Usar o arquivo site.css para as principais alterações de css -->
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body class="smart-style-2">
+    <header id="header">
+        <div id="logo-group">
+            <span id="logo"> <img src="~/img/logo.png" alt="Ponto Marcado"> </span>
+        </div>
+        <div id="dataCompleta">
+            
+                @string.Format("{0}", DateTime.Now.ToShortDateString())
+            
+        </div>
+
+        <div class="pull-right col-lg-6">
+
+            <!-- Partial View relacionada com o login e logout -->
+            <div id="hide-menu" class="btn-header pull-right">
+                <span> <a href="javascript:void(0);" data-action="toggleMenu" title="Menu"><i class="fa fa-reorder"></i></a> </span>
+            </div>
+            <partial name="_LoginPartial" />
+
+        </div>
+    </header>
+
+    <aside id="left-panel">
+
+        <div class="login-info">
+            <span>
+
+                <a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
+                    <img src="~/img/avatars/graziella.png" alt="me" class="online">
+                    <span>
+                        graziella berti
+                    </span>
+                    <i class="fa fa-angle-down"></i>
+                </a>
+            </span>
+        </div>
+
+        <nav>
+
+            <ul>
+                <li>
+                    <a href="#" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i><span class="menu-item-parent">Gerenciamento</span><b class="collapse-sign"></b></a>
+                    <ul>
+                        <li>
+                            @Html.ActionLink("Relatório", "Relatorio", "Report")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Calendário", "Calendar", "Calendar")
+                        </li>
+                        <li class="">
+                            @Html.ActionLink("Holerite", "Holerite", "PayStub")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Financeiro", "Financeiro", "Financial")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Pontos", "Index", "RegistroPontos")
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" title="Cadastros"><i class="fa fa-lg fa-fw fa-pencil"></i><span class="menu-item-parent">Cadastros</span><b class="collapse-sign"></b></a>
+                    <ul>
+                        <li>
+                            @Html.ActionLink("Funcionário", "Index", "Funcionarios")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Computadores", "Index", "Maquinas")
+                        </li>
+                        @*<li>
+                                @Html.ActionLink("Funcionário", "Index", "Funcionario")
+                            </li>*@
+                    </ul>
+                </li>
+                <li class="chat-users top-menu-invisible">
+                    <a href="#"><i class="fa fa-lg fa-fw fa-child"></i> <span class="menu-item-parent">Equipe</span><b class="collapse-sign"><em class="fa fa-plus-square-o"></em></b></a>
+                    <ul>
+                        <li>
+                            <!--  EMPLOYEES -->
+                            <div class="display-users">
+                                <input class="form-control chat-user-filter" placeholder="Filtro" type="text">
+                                <a href="#" class="usr" data-chat-id="cha1" data-chat-fname="Sadi" data-chat-lname="Orlaf" data-chat-status="busy" data-chat-alertmsg="Sadi Orlaf is in a meeting. Please do not disturb!" data-chat-alertshow="true" data-rel="popover-hover">
+                                    <i></i>André
+                                </a>
+                                <a href="#" class="usr" data-chat-id="cha2" data-chat-fname="Jessica" data-chat-lname="Dolof" data-chat-status="online" data-chat-alertmsg="" data-chat-alertshow="false" data-rel="popover-hover" data-placement="right" data-html="true">
+                                    <i></i>Erikson
+                                </a>
+                                <a href="#" class="usr" data-chat-id="cha3" data-chat-fname="Zekarburg" data-chat-lname="Almandalie" data-chat-status="online" data-rel="popover-hover" data-placement="right" data-html="true">
+                                    <i></i>Lucas
+                                </a>
+                                <a href="#" class="usr offline" data-chat-id="cha6" data-chat-status="incognito" data-rel="popover-hover" data-placement="right" data-html="true">
+                                    <i></i>Jeferson (férias)
+                                </a>
+                                <a href="#" class="btn btn-xs btn-default btn-block sa-chat-learnmore-btn">Cadastrar Funcionário</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <span class="minifyme" data-action="minifyMenu">
+            <i class="fa fa-arrow-circle-left hit"></i>
+        </span>
+
+    </aside>
+    <div id="main" role="main">
+        <partial name="_CookieConsentPartial" />
+        <div id="content">
+            @RenderBody()
+
+        </div>
+    </div>
+    <div class="page-footer">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <span class="txt-color-white">Ponto Marcado 1.0 - 2019</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/smart-admin/dist/js/app.config.js"></script>
+    <script src="~/lib/smart-admin/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/smart-admin/dist/js/jarvis.widget.min.js"></script>
+    <script src="~/lib/smart-admin/dist/js/jquery.validate.min.js"></script>
+    <script src="~/lib/smart-admin/dist/js/jquery.maskedinput.min.js"></script>
+    <script src="~/lib/smart-admin/dist/js/select2.min.js"></script>
+    <script src="~/lib/smart-admin/dist/js/app.min.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>
